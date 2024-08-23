@@ -14,6 +14,12 @@ export function getEnv(name, defaultValue) {
 
 // Usage example
 const cloudName = getEnv('CLOUD_NAME', 'default_cloud_name');
+
+export const env = {
+  MONGO_URI: 'cluster0.qy82j.mongodb.net',
+  PORT: process.env.PORT || 3000,
+  // Add other environment variables as needed
+};
 // export function env(name, defaultValue) {
 //   const value = process.env[name];
 
