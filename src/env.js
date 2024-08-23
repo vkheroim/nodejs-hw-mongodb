@@ -30,5 +30,10 @@ export const env = {
 //   throw new Error(`Missing: process.env['${name}'].`);
 // }
 
-// // Usage example
+// // Usage exampleCLOUD_NAME=your_cloud_name
+MONGO_URI = your_mongodb_uri;
+PORT = your_port_number;
+CLOUD_NAME = your_cloud_name;
+MONGO_URI = your_mongodb_uri;
+PORT = your_port_number;
 // const cloudName = env('CLOUD_NAME', 'default_cloud_name');
