@@ -29,11 +29,4 @@ export const env = {
 
 //   throw new Error(`Missing: process.env['${name}'].`);
 // }
-
-// // Usage exampleCLOUD_NAME=your_cloud_name
-MONGO_URI = your_mongodb_uri;
-PORT = your_port_number;
-CLOUD_NAME = your_cloud_name;
-MONGO_URI = your_mongodb_uri;
-PORT = your_port_number;
-// const cloudName = env('CLOUD_NAME', 'default_cloud_name');
+MONGO_URI=mongodb+srv://username:password@cluster0.qy82j.mongodb.net/myDatabase?retryWrites=true&w=majority
