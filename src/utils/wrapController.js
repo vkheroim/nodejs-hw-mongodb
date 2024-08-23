@@ -1,4 +1,5 @@
-export const ctrlWrapper = (controller) => {
+// src/utils/wrapController.js
+export const wrapController = (controller) => {
   return async (req, res, next) => {
     try {
       await controller(req, res, next);

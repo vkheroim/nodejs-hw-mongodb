@@ -1,5 +1,4 @@
 import { model, Schema } from 'mongoose';
-import { moongooseSaveError, setUpdateSettings } from './hooks.js';
 
 const contactsSchema = new Schema(
   {
@@ -24,14 +23,8 @@ const contactsSchema = new Schema(
       enam: ['personal', 'work', 'home'],
       default: 'personal',
     },
-    userId: { type: Schema.Types.ObjectId, ref: 'users', required: true },
-    photo: { type: String },
   },
   { versionKey: false, timestamps: true },
 );
-
-contactsSchema.post('save', moongooseSaveError);
-contactsSchema.pre('findOneAndUpdate', setUpdateSettings);
-contactsSchema.post('findOneAndUpdate', moongooseSaveError);
 
 export const Contact = model('contacts', contactsSchema);
